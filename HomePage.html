@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!--
+    Tip Calculator - Small Web app to calculate tip for total amount spent. App
+                     is built as weighted application without huge styling/animations
+                     to boost the performance. Background of the app home page is
+                     taken from - www.cso.org.au(Canberra Symphony Orchestra).Also,
+                     note that Tip is calculated as 15% of amount.
+    Styling        - tipCalculatorStyle.css
+    Script         - mathScript.js
+    Author         - Santhi Bhavanam
+
+!-->
+<html>
+  <link rel="stylesheet" href="css/tipCalculatorStyle.css" />
+<head>
+  <title>Tip Collector</title>
+  <script src="js/mathScript.js"></script>
+</head>
+
+<body>
+     <center>
+     <section class="mainP">
+      <h1>Tip Calculator</h1>
+      <p id="sentOne">Bill Amount:
+      <input class ="element" type="number" id="totalAmount"/></p>
+      <p id="sentOne">Percentage  :
+      <input class ="element" type="number" id="tipPercent"/></p><br>
+     <button id="calculate" onclick="calculateTip(document.getElementById('totalAmount').value,document.getElementById('tipPercent').value)">Calculate</button>
+
+     <p id=displayTip></p>
+     </section>
+     </center>
+</body>
+
+</html>
